@@ -1,19 +1,18 @@
-# Ester
+Ester, le reset CSS
+===================
 
-## Ester, le reset CSS
-
-### Installation
+## Installation
 
 `npm install --save @vtech/ester`
 
-### compilons SASS
+## compilons SASS
 
-#### Watch
+### Watch
 
-Regarder tous les fichiers `.scss` dans le dossier `scss/` et les recompiler chaque fois qu'il y a un changement :
+Surveiller les fichiers `.scss` du dossier `scss/` et les recompiler à chaque changement :
 `npm run start`
 
-#### Build
+### Build
 
-Regarder tous les fichiers `.scss` dans le dossier `scss/` et les recompiler une seule fois :
+Regarder les fichiers `.scss` du dossier `scss/` et les compiler une seule fois :
 `npm run build`

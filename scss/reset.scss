@@ -1,3 +1,248 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	line-height: inherit;
+	// border: 0; :: ?
+	border: inherit;
+	font-size: 100%;
+	font: inherit;
+	// vertical-align: baseline; supprimé pour les <sup> <sub> et <img>, par exemple.
+	text-align: inherit; // -webkit-match-parent webkit Chrome
+	// background: inherit; // Nope !
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 * {
-	color: tomato;
+	margin: 0;
+	padding: 0;
+}
+
+::-moz-selection {
+	color: #fff;
+	background: #000;
+}
+
+::selection {
+	color: #fff;
+	background: #000;
+}
+
+// placeholder des champs de formulaires
+::-webkit-input-placeholder {
+	color: inherit;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: inherit;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: inherit;
+}
+
+:-ms-input-placeholder {
+	color: inherit;
+}
+
+html {
+	color: inherit; // -internal-root-color Webkit Chrome
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+
+audio,
+video,
+figcaption,
+iframe {
+	max-width: 100%;
+}
+
+audio,
+video {
+	position: relative;
+	z-index: 0;
+}
+
+iframe {
+	width: 100%; // Par défaut, lalargeur est de 300px
+	border: 0;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+audio:not([controls]),
+video:not([controls]) {
+	display: none;
+}
+
+hr {
+	border: inherit;
+	border-top-width: 1px;
+}
+
+address {
+	font-style: normal;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+/* Pour pourvoir styler les puces numérotées (>IE7) */
+ol {
+	counter-reset: orderlists; /* on initialise et nomme un compteur */
+}
+ol > li {
+	list-style-type: none;
+	counter-increment: orderlists; /* on incrémente le compteur à chaque nouveau li */
+}
+ol > li:before {
+	content: counter(orderlists);
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+label {
+	cursor: inherit;
+}
+
+input {
+	writing-mode: horizontal-tb; // -webkit-writing-mode: horizontal-tb !important;
+}
+
+input,
+button,
+select,
+textarea {
+	border: 1px #ccc solid;
+	font: inherit;
+	text-align: inherit;
+	text-rendering: inherit;
+	font-size: 100%;
+	color: inherit;
+	cursor: auto;
+	border-radius: 0;
+	background: none;
+}
+
+pre,
+code {
+	white-space: pre;
+	// max-height: 80vh;
+	overflow: auto;
+	// font-family: monospace;
+	// tab-size: 3;
+	tab-width: 4;
+
+	&:hover,
+	&:focus {
+		width: min-content;
+	}
+}
+
+[type="radio"],
+[type="checkbox"] {
+
+}
+
+[type="image"] {
+	border: none;
+	border-radius: 0;
+}
+
+input[type="color"] {
+	// -webkit-appearance: none;
+}
+
+button {
+
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: inherit;
+
+	caption {
+		caption-side: bottom;
+		text-align: right;
+	}
 }
