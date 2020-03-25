@@ -3,12 +3,12 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.titre {
+.titre-1 {
 	margin: 2rem 1rem;
 	border: 0;
 	text-align: center;
 	font-size:  3rem;
-	color: #df3a23;
+	color: #cd1900;
 }
 
 .ancre {
@@ -28,22 +28,30 @@ body {
 	font-size: .85rem;
 }
 
+header {
+	border: 0;
+}
+
+.section {
+	max-width: 60%;
+
+}
+
 @media screen and (max-width: 1024px) {
+	body {
+		font-size: 90%;
+	}
+
 	.ancre {
 		position: static;
 		margin-bottom: 2em;
 		border: 1px #e6e6e6 solid;
 		box-shadow: none;
 	}
-}
 
-header {
-	border: 0;
-}
-
-.section {
-	max-width: 50%;
-
+	.section {
+		max-width: 100%;
+	}
 }
 
 .section .section {
@@ -56,14 +64,9 @@ header {
 	border-color: #e6e6e6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.titre-section {
 	border: 0;
-	color: #df3a23;
+	color: #cd1900;
 }
 
 a {

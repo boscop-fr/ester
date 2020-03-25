@@ -70,13 +70,13 @@ mark,
 audio,
 video {
 	line-height: inherit;
-	// border: 0; :: ?
-	border: inherit;
+	border: 0;
+	// border: inherit; // Pas pour les li
 	font-size: 100%;
 	font: inherit;
 	// vertical-align: baseline; supprimé pour les <sup> <sub> et <img>, par exemple.
 	text-align: inherit; // -webkit-match-parent webkit Chrome
-	// background: inherit; // Nope !
+	// background: inherit; // Nope ! Pas pour les button
 }
 
 *,
