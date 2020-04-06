@@ -7,114 +7,98 @@
 
 		<title>Fichier de test de Ester, le reset CSS</title>
 
+		<!-- CSS opérationnelle -->
 		<link href="../css/reset.css" media="all" rel="stylesheet" type="text/css">
+
+		<!-- CSS de présentation des tests -->
 		<link href="css/test.css" media="all" rel="stylesheet" type="text/css">
 
 		<script src="js/scroll.js"></script>
 
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
-	<body id="top">
+	<body id="top" tabindex="0">
 		<header id="header-0" role="banner">
 			<h1 class="titre-1 section">Ester, le reset CSS</h1>
 		</header>
 
 		<section id="main-nav" class="ancre">
 			<ul>
-				<li><a href="#main">main</a></li>
-				<li><a href="#header">header</a></li>
-				<li><a href="#titres">Titres hn</a></li>
-				<li><a href="#nav">nav</a></li>
-				<li><a href="#section">section</a></li>
-				<li><a href="#hr">hr</a></li>
-				<li><a href="#paragraphe">paragraphe</a></li>
-				<li><a href="#address">address</a></li>
-				<li><a href="#pre">pre</a></li>
-				<li><a href="#code">code</a></li>
-				<li><a href="#ul">ul</a></li>
-				<li><a href="#li">li</a></li>
-				<li><a href="#ol">ol</a></li>
-				<li><a href="#dl">dl</a></li>
-				<li><a href="#sup">sup</a></li>
-				<li><a href="#sub">sub</a></li>
-				<li><a href="#q">q</a></li>
-				<li><a href="#blockquote">blockquote</a></li>
-				<li><a href="#iframe">iframe</a></li>
-				<li><a href="#img">img</a></li>
-				<li><a href="#figure">figure</a></li>
-				<li><a href="#article">article</a></li>
+				<li><a href="#a">a (sans href)</a></li>
 				<li><a href="#abbr">abbr</a></li>
+				<li><a href="#address">address</a></li>
+				<li><a href="#article">article</a></li>
 				<li><a href="#aside">aside</a></li>
 				<li><a href="#audio">audio</a></li>
-				<li><a href="#video">video</a></li>
-				<li><a href="#form">form</a></li>
-				<li><a href="#fieldset">fieldset</a></li>
-				<li><a href="#legend">legend</a></li>
-				<li><a href="#label">label</a></li>
-				<li><a href="#color">input type color</a></li>
-				<li><a href="#number">input type number</a></li>
-				<li><a href="#url">input type url</a></li>
-				<li><a href="#email">input type email</a></li>
-				<li><a href="#tel">input type tel</a></li>
-				<li><a href="#range">input type range</a></li>
-				<li><a href="#radio">input type radio</a></li>
-				<li><a href="#checkbox">input type checkbox</a></li>
-				<li><a href="#select">select</a></li>
-				<li><a href="#textarea">texterea</a></li>
-				<li><a href="#submit">input type submit</a></li>
-				<li><a href="#inputimage">input type image</a></li>
+				<li><a href="#blockquote">blockquote</a></li>
+				<li><a href="#top">body</a></li>
 				<li><a href="#button">button</a></li>
-				<li><a href="#table">table</a></li>
+				<li><a href="#code">code</a></li>
+				<li><a href="#details">details</a></li>
+				<li><a href="#figure">figure</a></li>
 				<li><a href="#footer">footer</a></li>
+				<li>
+					<a href="#form">form</a>
+					<ul>
+						<li><a href="#fieldset">fieldset</a></li>
+						<li><a href="#legend">legend</a></li>
+						<li><a href="#label">label</a></li>
+						<li><a href="#color">input type color</a></li>
+						<li><a href="#number">input type number</a></li>
+						<li><a href="#url">input type url</a></li>
+						<li><a href="#email">input type email</a></li>
+						<li><a href="#text">input type text</a></li>
+						<li><a href="#search">input type search</a></li>
+						<li><a href="#tel">input type tel</a></li>
+						<li><a href="#range">input type range</a></li>
+						<li><a href="#radio">input type radio</a></li>
+						<li><a href="#checkbox">input type checkbox</a></li>
+						<li><a href="#select">select</a></li>
+						<li><a href="#textarea">texterea</a></li>
+						<li><a href="#submit">input type submit</a></li>
+						<li><a href="#inputimage">input type image</a></li>
+					</ul>
+				</li>
+				<li><a href="#header">header</a></li>
+				<li><a href="#hr">hr</a></li>
+				<li><a href="#iframe">iframe</a></li>
+				<li><a href="#img">img</a></li>
+				<li><a href="#main">main</a></li>
+				<li><a href="#nav">nav</a></li>
+				<li>
+					<a href="#ul">listes</a>
+					<ul>
+						<li><a href="#ul">ul</a></li>
+						<li><a href="#li">li</a></li>
+						<li><a href="#ol">ol</a></li>
+						<li><a href="#dl">dl</a></li>
+					</ul>
+				</li>
+				<li><a href="#paragraphe">paragraphe</a></li>
+				<li><a href="#pre">pre</a></li>
+				<li><a href="#q">q</a></li>
+				<li><a href="#section">section</a></li>
+				<li><a href="#sub">sub</a></li>
+				<li><a href="#sup">sup</a></li>
+				<li><a href="#table">table</a></li>
+				<li><a href="#titres">Titres hn</a></li>
+				<li><a href="#video">video</a></li>
 			</ul>
 		</section>
 
 		<main id="main" role="main" tabindex="0" class="section">
 			<section class="section">
-				<h1 class="titre-section">&lt;header&gt;</h1>
+				<h1 class="titre-section">&lt;a&gt; (sans href)</h1>
 
-				<header id="header" tabindex="0">
-					<p>&lt;header&gt; avec un &lt;p&gt; à l'intérieur</p>
-				</header>
+				<a id="a" tabindex="0">lien sans href (mais tabindex="0")</a>
 			</section>
 
 			<hr class="separator" />
 
-			<section id="titres" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;hn&gt;</h1>
+			<section id="abbr" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;abbr&gt;</h1>
 
-				<h1>un &lt;h1&gt; assez long pour rendre bien</h1>
-				<h2>un &lt;h2&gt; assez long pour rendre bien</h2>
-				<h3>un &lt;h3&gt; assez long pour rendre bien</h3>
-				<h4>un &lt;h4&gt; assez long pour rendre bien</h4>
-				<h5>un &lt;h5&gt; assez long pour rendre bien</h5>
-				<h6>un &lt;h6&gt; assez long pour rendre bien</h6>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;nav&gt;</h1>
-
-				<nav id="nav" role="navigation" tabindex="0">
-					<ul>
-						<li><code>&lt;nav&gt;</code> avec un &lt;ul&gt;&lt;li&gt; à l'intérieur</li>
-					</ul>
-				</nav>
-			</section>
-
-			<hr class="separator" />
-
-			<section id="section" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;section&gt;</h1>
-			</section>
-
-			<hr id="hr" tabindex="0" class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;p&gt;</h1>
-
-				<p id="paragraphe" tabindex="0">Ceci est un &lt;p&gt;</p>
+				<abbr title="abréviation ou acronyme">abbr</abbr>
 			</section>
 
 			<hr class="separator" />
@@ -129,147 +113,12 @@
 
 			<hr class="separator" />
 
-			<section class="section">
-				<h1 class="titre-section">&lt;pre&gt;</h1>
-
-				<pre id="pre" tabindex="0">
-					Le texte dans cette balise &lt;pre&gt; est affiché avec une largeur fixe.
-					Les sauts de lignes et les espaces sont respectés.
-					Attention à ne pas mettre l'attribut <code>white-space: normal</code> dans la CSS, sinon, les sauts de lignes ne seront pas actifs.
-				</pre>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;code&gt;</h1>
-
-				<!-- <pre> -->
-					<code id="code" tabindex="0" class="language-javascript">
-						teardown: function() {
-							if ( this.removeEventListener ) {
-								...
-							}
-						}
-					</code>
-				<!-- </pre> -->
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">listes</h1>
-
-				<h2 class="titre-section">liste à puce</h2>
-				<ul id="ul" tabindex="0">
-					<li id="li" tabindex="0">Ceci est un item de liste à puces &lt;ul&gt;</li>
-					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
-					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
-				</ul>
-
-				<hr class="separator" />
-
-				<h2 class="titre-section">liste ordonnée</h2>
-				<ol id="ol" tabindex="0">
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
-				</ol>
-
-				<hr class="separator" />
-
-				<h2 class="titre-section">liste de définitions</h2>
-				<dl id="dl" tabindex="0">
-					<dt>mot 1</dt>
-						<dd>Ceci est la définition de mot 1</dd>
-					</dt>
-					<dt>mot 2</dt>
-						<dd>Ceci est la définition de mot 2</dd>
-					</dt>
-				</dl>
-			</section>
-
-			<hr class="separator" />
-
-			<section id="sup" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;sup&gt;</h1>
-
-				m<sup>2</sup>
-			</section>
-
-			<hr class="separator" />
-
-			<section id="sub" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;sub&gt;</h1>
-
-				<p>
-					C<sub>8</sub>
-				</p>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;q&gt;</h1>
-
-				<q id="q" tabindex="0">Ceci est une ligne de citation</q>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;blockquote&gt;</h1>
-
-				<blockquote id="blockquote" tabindex="0" cite="http://example.com/facts">
-					<p>Ceci est un bloc de citation</p>
-				</blockquote>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;iframe&gt;</h1>
-
-				<iframe id="iframe" tabindex="0" src="../README.md" title="Title de l'iframe"></iframe>
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">img sans figure</h1>
-
-				<img id="img" tabindex="0" src="http://dummyimage.com/380x100.png" alt="alternative">
-			</section>
-
-			<hr class="separator" />
-
-			<section class="section">
-				<h1 class="titre-section">&lt;img&gt; + &lt;figcaption&gt; dans &lt;figure role="group"&gt;</h1>
-
-				<figure id="figure" tabindex="0" role="group" aria-label="Texte légende [...]">
-					<img src="http://dummyimage.com/380x100.png" alt="Texte légende (jpg - 151 Ko)">
-					<figcaption id="figcaption" tabindex="0">
-						<p>&lt;figcaption&gt; Texte légende [...] / © In enim justo rhoncus</p>
-					</figcaption>
-				</figure>
-			</section>
-
-			<hr class="separator" />
-
 			<section id="article" tabindex="0" class="section">
 				<h1 class="titre-section">&lt;article&gt; avec un &lt;p&gt; à l'intérieur</h1>
 
 				<article>
 					le fameux &lt;p&gt;
 				</article>
-			</section>
-
-			<hr class="separator" />
-
-			<section id="abbr" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;abbr&gt;</h1>
-
-				<abbr title="abréviation ou acronyme">abbr</abbr>
 			</section>
 
 			<hr class="separator" />
@@ -296,15 +145,62 @@
 			<hr class="separator" />
 
 			<section class="section">
-				<h1 class="titre-section">&lt;video&gt;</h1>
+				<h1 class="titre-section">&lt;blockquote&gt;</h1>
 
-				<video id="video" tabindex="0" src="datas/video.mp4" controls preload="auto">
-					<p>
-						Balise HTML5 <code>&lt;video&gt;</code> non supportée par votre navigateur.<br>
-						<a href="datas/video.mp4" target="_blank" title="Télécharger le fichier &quot;video.mp4&quot; et lisez-le avec le logiciel de votre choix. (nouvelle fenêtre)">Télécharger le fichier "video.mp4" et lisez-le avec le logiciel de votre choix.</a>
-					</p>
-				</audio>
+				<blockquote id="blockquote" tabindex="0" cite="http://example.com/facts">
+					<p>Ceci est un bloc de citation</p>
+				</blockquote>
 			</section>
+
+			<hr class="separator" />
+
+			<section id="button" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;button type="button"&gt;</h1>
+
+				<button type="button">button</button>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;code&gt;</h1>
+
+				<code id="code" tabindex="0" class="language-javascript">
+					teardown: function() {
+						if ( this.removeEventListener ) {
+							...
+						}
+					}
+				</code>
+			</section>
+
+			<hr class="separator" />
+
+			<section id="details" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;details&gt;</h1>
+
+				<details type="button">details</details>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;img&gt; + &lt;figcaption&gt; dans &lt;figure role="group"&gt;</h1>
+
+				<figure id="figure" tabindex="0" role="group" aria-label="Texte légende [...]">
+					<img src="http://dummyimage.com/380x100.png" alt="Texte légende (jpg - 151 Ko)">
+					<figcaption id="figcaption" tabindex="0">
+						<p>&lt;figcaption&gt; Texte légende [...] / © In enim justo rhoncus</p>
+					</figcaption>
+				</figure>
+			</section>
+
+			<hr class="separator" />
+
+			<footer id="footer" tabindex="0">
+				<h1 class="titre-section">&lt;footer&gt;</h1>
+				<p>footer</p>
+			</footer>
 
 			<hr class="separator" />
 
@@ -341,6 +237,20 @@
 						<div>
 							<label for="email">&lt;label&gt; du &lt;input type="email"&gt;</label>
 							<input type="email" id="email" name="email" placeholder="placeholder" required>
+						</div>
+
+						<hr class="separator" />
+
+						<div>
+							<label for="text">&lt;label&gt; du &lt;input type="text"&gt;</label>
+							<input type="text" id="text" name="text" placeholder="placeholder" required>
+						</div>
+
+						<hr class="separator" />
+
+						<div>
+							<label for="search">&lt;label&gt; du &lt;input type="search"&gt;</label>
+							<input type="search" id="search" name="search" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
@@ -410,15 +320,130 @@
 
 					<input id="inputimage" type="image" src="img/search.svg" width="32" value="input type image" />
 				</form>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;header&gt;</h1>
+
+				<header id="header" tabindex="0">
+					<p>&lt;header&gt; avec un &lt;p&gt; à l'intérieur</p>
+				</header>
+			</section>
+
+			<hr id="hr" tabindex="0" class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;iframe&gt;</h1>
+
+				<iframe id="iframe" tabindex="0" src="../README.md" title="Title de l'iframe"></iframe>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">img sans figure</h1>
+
+				<img id="img" tabindex="0" src="http://dummyimage.com/380x100.png" alt="alternative">
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;nav&gt;</h1>
+
+				<nav id="nav" role="navigation" tabindex="0">
+					<ul>
+						<li><code>&lt;nav&gt;</code> avec un &lt;ul&gt;&lt;li&gt; à l'intérieur</li>
+					</ul>
+				</nav>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">listes</h1>
+
+				<h2 class="titre-section">liste à puce</h2>
+				<ul id="ul" tabindex="0">
+					<li id="li" tabindex="0">Ceci est un item de liste à puces &lt;ul&gt;</li>
+					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
+					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
+				</ul>
 
 				<hr class="separator" />
 
-				<section id="button" tabindex="0" class="section">
-					<h1 class="titre-section">&lt;button type="button"&gt;</h1>
+				<h2 class="titre-section">liste ordonnée</h2>
+				<ol id="ol" tabindex="0">
+					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
+					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
+					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
+				</ol>
 
-					<button type="button">button</button>
-				</section>
+				<hr class="separator" />
 
+				<h2 class="titre-section">liste de définitions</h2>
+				<dl id="dl" tabindex="0">
+					<dt>mot 1</dt>
+						<dd>Ceci est la définition de mot 1</dd>
+					</dt>
+					<dt>mot 2</dt>
+						<dd>Ceci est la définition de mot 2</dd>
+					</dt>
+				</dl>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;p&gt;</h1>
+
+				<p id="paragraphe" tabindex="0">Ceci est un &lt;p&gt;</p>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;pre&gt;</h1>
+
+				<pre id="pre" tabindex="0">
+					Le texte dans cette balise &lt;pre&gt; est affiché avec une largeur fixe.
+					Les sauts de lignes et les espaces sont respectés.
+					Attention à ne pas mettre l'attribut <code>white-space: normal;</code> dans la CSS, sinon, les sauts de lignes ne seront pas actifs.
+				</pre>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;q&gt;</h1>
+
+				<q id="q" tabindex="0">Ceci est une ligne de citation</q>
+			</section>
+
+			<hr class="separator" />
+
+			<section id="section" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;section&gt;</h1>
+			</section>
+
+			<hr class="separator" />
+
+			<section id="sub" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;sub&gt;</h1>
+
+				<p>
+					C<sub>8</sub>
+				</p>
+			</section>
+
+			<hr class="separator" />
+
+			<section id="sup" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;sup&gt;</h1>
+
+				m<sup>2</sup>
 			</section>
 
 			<hr class="separator" />
@@ -450,10 +475,29 @@
 
 			<hr class="separator" />
 
-			<footer id="footer" tabindex="0">
-				<h1 class="titre-section">&lt;footer&gt;</h1>
-				<p>footer</p>
-			</footer>
+			<section id="titres" tabindex="0" class="section">
+				<h1 class="titre-section">&lt;hn&gt;</h1>
+
+				<h1>un &lt;h1&gt; assez long pour rendre bien</h1>
+				<h2>un &lt;h2&gt; assez long pour rendre bien</h2>
+				<h3>un &lt;h3&gt; assez long pour rendre bien</h3>
+				<h4>un &lt;h4&gt; assez long pour rendre bien</h4>
+				<h5>un &lt;h5&gt; assez long pour rendre bien</h5>
+				<h6>un &lt;h6&gt; assez long pour rendre bien</h6>
+			</section>
+
+			<hr class="separator" />
+
+			<section class="section">
+				<h1 class="titre-section">&lt;video&gt;</h1>
+
+				<video id="video" tabindex="0" src="datas/video.mp4" controls preload="auto">
+					<p>
+						Balise HTML5 <code>&lt;video&gt;</code> non supportée par votre navigateur.<br>
+						<a href="datas/video.mp4" target="_blank" title="Télécharger le fichier &quot;video.mp4&quot; et lisez-le avec le logiciel de votre choix. (nouvelle fenêtre)">Télécharger le fichier "video.mp4" et lisez-le avec le logiciel de votre choix.</a>
+					</p>
+				</audio>
+			</section>
 		</main>
 
 		<!-- Hors scope -->

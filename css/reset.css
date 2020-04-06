@@ -17,6 +17,8 @@ pre,
 a,
 abbr,
 address,
+bdo,
+bdi,
 cite,
 code,
 del,
@@ -110,6 +112,20 @@ video {
 html {
   color: inherit; }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -139,6 +155,7 @@ video:not([controls]) {
 
 hr {
   border: inherit;
+  border-width: 0;
   border-top-width: 1px; }
 
 address {
@@ -153,7 +170,7 @@ ol {
   /* on initialise et nomme un compteur */ }
 
 ol > li {
-  list-style-type: none;
+  list-style: none;
   counter-increment: orderlists;
   /* on incrémente le compteur à chaque nouveau li */ }
 
@@ -192,9 +209,28 @@ code {
   code:focus {
     width: min-content; }
 
+a:not([href]) {
+  text-decoration: none; }
+  a:not([href]):hover, a:not([href]):focus {
+    text-decoration: none; }
+
 [type="image"] {
   border: none;
   border-radius: 0; }
+
+input[type="color"] {
+  border: 0; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
 
 table {
   width: 100%;

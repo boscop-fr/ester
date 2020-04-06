@@ -16,6 +16,8 @@ pre,
 a,
 abbr,
 address,
+bdo,
+bdi,
 cite,
 code,
 del,
@@ -121,6 +123,21 @@ html {
 	color: inherit; // -internal-root-color Webkit Chrome
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
 body {
 	min-height: 100vh;
 	scroll-behavior: smooth;
@@ -155,6 +172,7 @@ video:not([controls]) {
 
 hr {
 	border: inherit;
+	border-width: 0;
 	border-top-width: 1px;
 }
 
@@ -163,6 +181,7 @@ address {
 }
 
 ul {
+	// list-style: none;
 	list-style-position: inside;
 }
 
@@ -171,7 +190,7 @@ ol {
 	counter-reset: orderlists; /* on initialise et nomme un compteur */
 }
 ol > li {
-	list-style-type: none;
+	list-style: none;
 	counter-increment: orderlists; /* on incrémente le compteur à chaque nouveau li */
 }
 ol > li:before {
@@ -218,9 +237,13 @@ code {
 	}
 }
 
-[type="radio"],
-[type="checkbox"] {
+a:not([href]) {
+	text-decoration: none;
 
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
 
 [type="image"] {
@@ -229,11 +252,20 @@ code {
 }
 
 input[type="color"] {
+	border: 0;
 	// -webkit-appearance: none;
 }
 
-button {
-
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
 }
 
 table {
