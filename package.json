@@ -1,6 +1,6 @@
 {
   "name": "@vtech/ester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ester, le reset CSS",
   "publishConfig": {
     "registry": "https://npm-registry.vtech.fr"
