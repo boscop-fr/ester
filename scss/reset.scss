@@ -73,12 +73,9 @@ audio,
 video {
 	line-height: inherit;
 	border: 0;
-	// border: inherit; // Pas pour les li
 	font-size: 100%;
 	font: inherit;
-	// vertical-align: baseline; supprimé pour les <sup> <sub> et <img>, par exemple.
 	text-align: inherit; // -webkit-match-parent webkit Chrome
-	// background: inherit; // Nope ! Pas pour les button
 }
 
 *,
@@ -183,18 +180,19 @@ address {
 }
 
 ul {
-	// list-style: none;
 	list-style-position: inside;
 }
 
-/* Pour pourvoir styler les puces numérotées (>IE7) */
+/* Pour styler les puces numérotées */
 ol {
 	counter-reset: orderlists; /* on initialise et nomme un compteur */
 }
+
 ol > li {
 	list-style: none;
 	counter-increment: orderlists; /* on incrémente le compteur à chaque nouveau li */
 }
+
 ol > li:before {
 	content: counter(orderlists);
 	margin-right: 1em;
@@ -206,7 +204,7 @@ label {
 }
 
 input {
-	writing-mode: horizontal-tb; // -webkit-writing-mode: horizontal-tb !important;
+	writing-mode: horizontal-tb;
 }
 
 input,
@@ -227,10 +225,7 @@ textarea {
 pre,
 code {
 	white-space: pre;
-	// max-height: 80vh;
 	overflow: auto;
-	// font-family: monospace;
-	// tab-size: 3;
 	tab-width: 4;
 
 	&:hover,
@@ -255,7 +250,6 @@ a:not([href]) {
 
 input[type="color"] {
 	border: 0;
-	// -webkit-appearance: none;
 }
 
 blockquote,

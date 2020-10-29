@@ -5,7 +5,7 @@
   "publishConfig": {
     "registry": "https://npm-registry.vtech.fr"
   },
-  "main": "reset.scss",
+  "main": "scss/reset.scss",
   "repository": {
     "type": "git",
     "url": "ssh://git@git.vtech.fr:888/hyperspace/ester.git"
