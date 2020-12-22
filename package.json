@@ -1,17 +1,13 @@
 {
-  "name": "@vtech/ester",
+  "name": "@empreinte-digitale/ester",
   "version": "1.0.1",
-  "description": "Ester, le reset CSS",
+  "description": "Ester, the CSS reset",
+  "author": "Emmanuel Charbonnier <emmanuel.charbonnier@empreintedigitale.fr>",
   "main": "scss/reset.scss",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@git.vtech.fr:888/hyperspace/ester.git"
-  },
   "keywords": [
     "reset",
     "css"
   ],
-  "author": "Emmanuel Charbonnier",
   "engines": {
     "node": ">=6.15.1"
   },
