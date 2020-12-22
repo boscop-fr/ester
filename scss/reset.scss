@@ -75,7 +75,7 @@ video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	text-align: inherit; // -webkit-match-parent webkit Chrome
+	text-align: inherit;
 }
 
 *,
@@ -99,16 +99,17 @@ video {
 	background: #000;
 }
 
-// placeholder des champs de formulaires
 ::-webkit-input-placeholder {
 	color: inherit;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+// Firefox 18-
+:-moz-placeholder {
 	color: inherit;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+// Firefox 19+
+::-moz-placeholder {
 	color: inherit;
 }
 
@@ -120,7 +121,6 @@ html {
 	color: inherit; // -internal-root-color Webkit Chrome
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -136,9 +136,10 @@ section {
 }
 
 body {
-	min-height: 100vh; // à tester
-	-webkit-overflow-scrolling: touch; /* on laisse le défilement se poursuivre */ // webkit Safari iOS
-	text-rendering: optimizeSpeed; /* On laisse, à tester de toute façon */
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	// Lets the scrolling go on on webkit Safari iOS
+	-webkit-overflow-scrolling: touch;
 }
 
 audio,
@@ -155,13 +156,12 @@ video {
 }
 
 iframe {
-	width: 100%; // Par défaut, la largeur est de 300px
+	width: 100%;
 	border: 0;
 }
 
-/*
- * Prevents modern browsers from displaying 'audio' without controls
- */
+// Prevents modern browsers from displaying <audio /> without
+// controls.
 audio:not([controls]),
 video:not([controls]) {
 	display: none;
@@ -183,14 +183,13 @@ ul {
 	list-style-position: inside;
 }
 
-/* Pour styler les puces numérotées */
 ol {
-	counter-reset: orderlists; /* on initialise et nomme un compteur */
+	counter-reset: orderlists;
 }
 
 ol > li {
 	list-style: none;
-	counter-increment: orderlists; /* on incrémente le compteur à chaque nouveau li */
+	counter-increment: orderlists;
 }
 
 ol > li:before {
