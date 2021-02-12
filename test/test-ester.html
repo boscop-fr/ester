@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr-fr">
+
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 		<meta name="robots" content="noindex, nofollow">
 
-		<title>Fichier de test de Ester, le reset CSS</title>
+		<title>Test file for Ester, the CSS reset</title>
 
-		<!-- CSS opérationnelle -->
 		<link href="../css/reset.css" media="all" rel="stylesheet" type="text/css">
-
-		<!-- CSS de présentation des tests -->
 		<link href="css/test.css" media="all" rel="stylesheet" type="text/css">
-
-		<script src="js/scroll.js"></script>
-
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
+
 	<body id="top" tabindex="0">
 		<header id="header-0" role="banner">
-			<h1 class="titre-1 section">Ester, le reset CSS</h1>
+			<h1 class="titre-1 section">Ester, the CSS reset</h1>
 		</header>
 
 		<section id="main-nav" class="ancre">
 			<ul>
-				<li><a href="#a">a (sans href)</a></li>
+				<li><a href="#a">a (without href)</a></li>
 				<li><a href="#abbr">abbr</a></li>
 				<li><a href="#address">address</a></li>
 				<li><a href="#article">article</a></li>
@@ -54,7 +50,7 @@
 						<li><a href="#radio">input type radio</a></li>
 						<li><a href="#checkbox">input type checkbox</a></li>
 						<li><a href="#select">select</a></li>
-						<li><a href="#textarea">texterea</a></li>
+						<li><a href="#textarea">textarea</a></li>
 						<li><a href="#submit">input type submit</a></li>
 						<li><a href="#inputimage">input type image</a></li>
 					</ul>
@@ -66,7 +62,7 @@
 				<li><a href="#main">main</a></li>
 				<li><a href="#nav">nav</a></li>
 				<li>
-					<a href="#ul">listes</a>
+					<a href="#ul">lists</a>
 					<ul>
 						<li><a href="#ul">ul</a></li>
 						<li><a href="#li">li</a></li>
@@ -74,23 +70,23 @@
 						<li><a href="#dl">dl</a></li>
 					</ul>
 				</li>
-				<li><a href="#paragraphe">paragraphe</a></li>
+				<li><a href="#paragraph">paragraph</a></li>
 				<li><a href="#pre">pre</a></li>
 				<li><a href="#q">q</a></li>
 				<li><a href="#section">section</a></li>
 				<li><a href="#sub">sub</a></li>
 				<li><a href="#sup">sup</a></li>
 				<li><a href="#table">table</a></li>
-				<li><a href="#titres">Titres hn</a></li>
+				<li><a href="#titles">hn titles</a></li>
 				<li><a href="#video">video</a></li>
 			</ul>
 		</section>
 
 		<main id="main" role="main" tabindex="0" class="section">
 			<section class="section">
-				<h1 class="titre-section">&lt;a&gt; (sans href)</h1>
+				<h1 class="titre-section">&lt;a&gt; (without &lt;href&gt;)</h1>
 
-				<a id="a" tabindex="0">lien sans href (mais tabindex="0")</a>
+				<a id="a" tabindex="0">link without &lt;href&gt; (but &lt;tabindex="0"&gt;)</a>
 			</section>
 
 			<hr class="separator" />
@@ -107,17 +103,17 @@
 				<h1 class="titre-section">&lt;address&gt;</h1>
 
 				<address id="address" tabindex="0">
-					&lt;address&gt; avec numéro, rue, code postal et ville pour voir
+					&lt;address&gt; with street name and postal code
 				</address>
 			</section>
 
 			<hr class="separator" />
 
 			<section id="article" tabindex="0" class="section">
-				<h1 class="titre-section">&lt;article&gt; avec un &lt;p&gt; à l'intérieur</h1>
+				<h1 class="titre-section">&lt;article&gt; with a &lt;p&gt; inside</h1>
 
 				<article>
-					le fameux &lt;p&gt;
+					The famous &lt;p&gt;
 				</article>
 			</section>
 
@@ -126,7 +122,7 @@
 			<section id="aside" tabindex="0" class="section">
 				<h1 class="titre-section">&lt;aside&gt;</h1>
 
-				<aside>Contenu de aside</aside>
+				<aside>aside content</aside>
 			</section>
 
 			<hr class="separator" />
@@ -134,10 +130,12 @@
 			<section class="section">
 				<h1 class="titre-section">&lt;audio&gt;</h1>
 
-				<audio id="audio" tabindex="0" src="datas/audio.mp3" controls preload="auto">
+				<audio id="audio" tabindex="0" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" controls preload="auto">
 					<p>
-						Balise HTML5 <code>&lt;audio&gt;</code> non supportée par votre navigateur.<br>
-						<a href="datas/audio.mp3" target="_blank" title="Télécharger le fichier &quot;audio.mp3&quot; et lisez-le avec le logiciel de votre choix. (nouvelle fenêtre)">Télécharger le fichier "audio.mp3" et lisez-le avec le logiciel de votre choix.</a>
+						Your browser does not support the <code>&lt;audio&gt;</code> element.<br>
+						<a href="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" target="_blank" title="Download &quot;t-rex-roar.mp3&quot; and play it with your software of choice. (new window)">
+							Download "audio.mp3" and play it with your software of choice.
+						</a>
 					</p>
 				</audio>
 			</section>
@@ -148,7 +146,7 @@
 				<h1 class="titre-section">&lt;blockquote&gt;</h1>
 
 				<blockquote id="blockquote" tabindex="0" cite="http://example.com/facts">
-					<p>Ceci est un bloc de citation</p>
+					<p>This is a blockquote</p>
 				</blockquote>
 			</section>
 
@@ -167,8 +165,8 @@
 
 				<code id="code" tabindex="0" class="language-javascript">
 					teardown: function() {
-						if ( this.removeEventListener ) {
-							...
+						if (this.removeEventListener) {
+							// …
 						}
 					}
 				</code>
@@ -185,12 +183,12 @@
 			<hr class="separator" />
 
 			<section class="section">
-				<h1 class="titre-section">&lt;img&gt; + &lt;figcaption&gt; dans &lt;figure role="group"&gt;</h1>
+				<h1 class="titre-section">&lt;img&gt; + &lt;figcaption&gt; inside &lt;figure role="group"&gt;</h1>
 
-				<figure id="figure" tabindex="0" role="group" aria-label="Texte légende [...]">
-					<img src="http://dummyimage.com/380x100.png" alt="Texte légende (jpg - 151 Ko)">
+				<figure id="figure" tabindex="0" role="group" aria-label="Caption text [...]">
+					<img src="http://dummyimage.com/380x100.png" alt="Caption text (jpg - 151 Ko)">
 					<figcaption id="figcaption" tabindex="0">
-						<p>&lt;figcaption&gt; Texte légende [...] / © In enim justo rhoncus</p>
+						<p>&lt;figcaption&gt; Caption text […] / © In enim justo rhoncus</p>
 					</figcaption>
 				</figure>
 			</section>
@@ -214,56 +212,56 @@
 						<hr class="separator" />
 
 						<div id="div" tabindex="0">
-							<label id="label" tabindex="0" for="color">&lt;label&gt; du &lt;input type="color"&gt;</label>
+							<label id="label" tabindex="0" for="color">&lt;label&gt; for &lt;input type="color"&gt;</label>
 							<input type="color" id="color" name="color" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="number">&lt;label&gt; du &lt;input type="number"&gt;</label>
+							<label for="number">&lt;label&gt; for &lt;input type="number"&gt;</label>
 							<input type="number" id="number" step="6" name="howmuch" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="url">&lt;label&gt; du &lt;input type="url"&gt;</label>
+							<label for="url">&lt;label&gt; for &lt;input type="url"&gt;</label>
 							<input type="url" id="url" name="url" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="email">&lt;label&gt; du &lt;input type="email"&gt;</label>
+							<label for="email">&lt;label&gt; for &lt;input type="email"&gt;</label>
 							<input type="email" id="email" name="email" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="text">&lt;label&gt; du &lt;input type="text"&gt;</label>
+							<label for="text">&lt;label&gt; for &lt;input type="text"&gt;</label>
 							<input type="text" id="text" name="text" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="search">&lt;label&gt; du &lt;input type="search"&gt;</label>
+							<label for="search">&lt;label&gt; for &lt;input type="search"&gt;</label>
 							<input type="search" id="search" name="search" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="tel">&lt;label&gt; du &lt;input type="tel"&gt;</label>
+							<label for="tel">&lt;label&gt; for &lt;input type="tel"&gt;</label>
 							<input type="tel" id="tel" name="tel" placeholder="placeholder" required>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="range">&lt;label&gt; du &lt;input type="range"&gt;</label>
+							<label for="range">&lt;label&gt; for &lt;input type="range"&gt;</label>
 							<input type="range" value="0" min="0" max="5" step="1" id="range" name="range" required />
 						</div>
 
@@ -271,34 +269,34 @@
 
 						<div>
 							<input type="radio" id="radio" name="radio">
-							<label for="radio">&lt;label&gt; du &lt;input type="radio"&gt;</label>
+							<label for="radio">&lt;label&gt; for &lt;input type="radio"&gt;</label>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
 							<input type="checkbox" id="checkbox" name="checkbox">
-							<label for="checkbox">&lt;label&gt; du &lt;input type="checkbox"&gt;</label>
+							<label for="checkbox">&lt;label&gt; for &lt;input type="checkbox"&gt;</label>
 						</div>
 
 						<hr class="separator" />
 
 						<div>
-							<label for="select">&lt;label&gt; du &lt;select&gt;</label>
+							<label for="select">&lt;label&gt; for &lt;select&gt;</label>
 							<select id="select" name="dep" placeholder="placeholder" required>
-								<optgroup label="Pays-de-la-Loire">
-									<option>département 1.1</option>
-									<option>département 1.2</option>
-									<option>département 1.3</option>
+								<optgroup label="Group 1">
+									<option>Option 1.1</option>
+									<option>Option 1.2</option>
+									<option>Option 1.3</option>
 								</optgroup>
-								<optgroup label="Picardie">
-									<option>département 2.1</option>
-									<option>département 2.2</option>
+								<optgroup label="Group 2">
+									<option>Option 2.1</option>
+									<option>Option 2.2</option>
 								</optgroup>
-								<optgroup label="Bourgogne">
-									<option>département 3.1</option>
-									<option>département 3.2</option>
-									<option>département 3.3</option>
+								<optgroup label="Group 3">
+									<option>Option 3.1</option>
+									<option>Option 3.2</option>
+									<option>Option 3.3</option>
 								</optgroup>
 							</select>
 						</div>
@@ -306,7 +304,7 @@
 						<hr class="separator" />
 
 						<div>
-							<label for="textarea">&lt;label&gt; du &lt;texterea&gt;</label>
+							<label for="textarea">&lt;label&gt; for &lt;textarea&gt;</label>
 							<br />
 							<textarea id="textarea" name="textarea" required></textarea>
 						</div>
@@ -328,7 +326,7 @@
 				<h1 class="titre-section">&lt;header&gt;</h1>
 
 				<header id="header" tabindex="0">
-					<p>&lt;header&gt; avec un &lt;p&gt; à l'intérieur</p>
+					<p>&lt;header&gt; with a &lt;p&gt; inside</p>
 				</header>
 			</section>
 
@@ -343,7 +341,7 @@
 			<hr class="separator" />
 
 			<section class="section">
-				<h1 class="titre-section">img sans figure</h1>
+				<h1 class="titre-section">img without figure</h1>
 
 				<img id="img" tabindex="0" src="http://dummyimage.com/380x100.png" alt="alternative">
 			</section>
@@ -355,7 +353,7 @@
 
 				<nav id="nav" role="navigation" tabindex="0">
 					<ul>
-						<li><code>&lt;nav&gt;</code> avec un &lt;ul&gt;&lt;li&gt; à l'intérieur</li>
+						<li><code>&lt;nav&gt;</code> with a &lt;ul&gt;&lt;li&gt; inside</li>
 					</ul>
 				</nav>
 			</section>
@@ -363,34 +361,33 @@
 			<hr class="separator" />
 
 			<section class="section">
-				<h1 class="titre-section">listes</h1>
+				<h1 class="titre-section">Lists</h1>
 
-				<h2 class="titre-section">liste à puce</h2>
+				<h2 class="titre-section">Unordered list</h2>
 				<ul id="ul" tabindex="0">
-					<li id="li" tabindex="0">Ceci est un item de liste à puces &lt;ul&gt;</li>
-					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
-					<li>Ceci est un item de liste à puces &lt;ul&gt;</li>
+					<li id="li" tabindex="0">This is an item from an unordered list (&lt;ul&gt;)</li>
+					<li>This is an item from an unordered list (&lt;ul&gt;)</li>
+					<li>This is an item from an unordered list (&lt;ul&gt;)</li>
 				</ul>
 
 				<hr class="separator" />
 
-				<h2 class="titre-section">liste ordonnée</h2>
+				<h2 class="titre-section">Ordered list</h2>
 				<ol id="ol" tabindex="0">
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
-					<li>Ceci est un item de liste ordonnée &lt;ol&gt;</li>
+					<li>This is an item from an ordered list (&lt;ol&gt;)</li>
+					<li>This is an item from an ordered list (&lt;ol&gt;)</li>
+					<li>This is an item from an ordered list (&lt;ol&gt;)</li>
 				</ol>
 
 				<hr class="separator" />
 
-				<h2 class="titre-section">liste de définitions</h2>
+				<h2 class="titre-section">Description lists</h2>
 				<dl id="dl" tabindex="0">
-					<dt>mot 1</dt>
-						<dd>Ceci est la définition de mot 1</dd>
-					</dt>
-					<dt>mot 2</dt>
-						<dd>Ceci est la définition de mot 2</dd>
-					</dt>
+					<dt>Term 1</dt>
+					<dd>This is a description of term 1.</dd>
+
+					<dt>Term 2</dt>
+					<dd>This is a description of term 2.</dd>
 				</dl>
 			</section>
 
@@ -399,7 +396,7 @@
 			<section class="section">
 				<h1 class="titre-section">&lt;p&gt;</h1>
 
-				<p id="paragraphe" tabindex="0">Ceci est un &lt;p&gt;</p>
+				<p id="paragraph" tabindex="0">This is a &lt;p&gt;</p>
 			</section>
 
 			<hr class="separator" />
@@ -408,9 +405,9 @@
 				<h1 class="titre-section">&lt;pre&gt;</h1>
 
 				<pre id="pre" tabindex="0">
-					Le texte dans cette balise &lt;pre&gt; est affiché avec une largeur fixe.
-					Les sauts de lignes et les espaces sont respectés.
-					Attention à ne pas mettre l'attribut <code>white-space: normal;</code> dans la CSS, sinon, les sauts de lignes ne seront pas actifs.
+					Text inside &lt;pre&gt; has a fixed width.
+					Whitespaces and line breaks are preserved.
+					Avoid using <code>white-space: normal;</code> as it would break line breaks.
 				</pre>
 			</section>
 
@@ -419,7 +416,7 @@
 			<section class="section">
 				<h1 class="titre-section">&lt;q&gt;</h1>
 
-				<q id="q" tabindex="0">Ceci est une ligne de citation</q>
+				<q id="q" tabindex="0">This is a quote</q>
 			</section>
 
 			<hr class="separator" />
@@ -455,19 +452,19 @@
 					<caption id="caption" tabindex="0">&lt;caption&gt;</caption>
 					<tbody>
 						<tr id="tr" tabindex="0">
-							<th id="th" tabindex="0" scope="col">&lt;th&gt; 1 col 1</th>
-							<th scope="col">&lt;th&gt; 2 col 2</th>
-							<th scope="col">&lt;th&gt; 3 col 3</th>
+							<th id="th" tabindex="0" scope="col">&lt;th&gt; 1 column 1</th>
+							<th scope="col">&lt;th&gt; 2 column 2</th>
+							<th scope="col">&lt;th&gt; 3 column 3</th>
 						</tr>
 						<tr>
-							<th scope="row">&lt;th&gt; 1 ligne 1</th>
-							<td id="td" tabindex="0">&lt;td&gt; 1 ligne 1</td>
-							<td>&lt;td&gt; 2 ligne 1</td>
+							<th scope="row">&lt;th&gt; 1 line 1</th>
+							<td id="td" tabindex="0">&lt;td&gt; 1 line 1</td>
+							<td>&lt;td&gt; 2 line 1</td>
 						</tr>
 						<tr>
-							<th scope="row">&lt;th&gt; 1 ligne 2</th>
-							<td>&lt;td&gt; 1 ligne 2</td>
-							<td>&lt;td&gt; 2 ligne 2</td>
+							<th scope="row">&lt;th&gt; 1 line 2</th>
+							<td>&lt;td&gt; 1 line 2</td>
+							<td>&lt;td&gt; 2 line 2</td>
 						</tr>
 					</tbody>
 				</table>
@@ -475,15 +472,15 @@
 
 			<hr class="separator" />
 
-			<section id="titres" tabindex="0" class="section">
+			<section id="titles" tabindex="0" class="section">
 				<h1 class="titre-section">&lt;hn&gt;</h1>
 
-				<h1>un &lt;h1&gt; assez long pour rendre bien</h1>
-				<h2>un &lt;h2&gt; assez long pour rendre bien</h2>
-				<h3>un &lt;h3&gt; assez long pour rendre bien</h3>
-				<h4>un &lt;h4&gt; assez long pour rendre bien</h4>
-				<h5>un &lt;h5&gt; assez long pour rendre bien</h5>
-				<h6>un &lt;h6&gt; assez long pour rendre bien</h6>
+				<h1>A &lt;h1&gt; long enough to seem plausible</h1>
+				<h2>A &lt;h2&gt; long enough to seem plausible</h2>
+				<h3>A &lt;h3&gt; long enough to seem plausible</h3>
+				<h4>A &lt;h4&gt; long enough to seem plausible</h4>
+				<h5>A &lt;h5&gt; long enough to seem plausible</h5>
+				<h6>A &lt;h6&gt; long enough to seem plausible</h6>
 			</section>
 
 			<hr class="separator" />
@@ -491,19 +488,21 @@
 			<section class="section">
 				<h1 class="titre-section">&lt;video&gt;</h1>
 
-				<video id="video" tabindex="0" src="datas/video.mp4" controls preload="auto">
+				<video id="video" tabindex="0" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls preload="auto">
 					<p>
-						Balise HTML5 <code>&lt;video&gt;</code> non supportée par votre navigateur.<br>
-						<a href="datas/video.mp4" target="_blank" title="Télécharger le fichier &quot;video.mp4&quot; et lisez-le avec le logiciel de votre choix. (nouvelle fenêtre)">Télécharger le fichier "video.mp4" et lisez-le avec le logiciel de votre choix.</a>
+						Your browser does not support the <code>&lt;audio&gt;</code> element.<br>
+						<a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" target="_blank" title="Download &quot;flower.mp4&quot; and play it with your software of choice. (new window)">Download "video.mp4" and play it with your software of choice.</a>
 					</p>
 				</audio>
 			</section>
 		</main>
 
-		<!-- Hors scope -->
+		<!-- Outside of scope -->
 
-		<button id="scroll-btn" class="retour_top" title="Haut de page">
-			<img src="img/top.svg" class="ancre_top" alt="haut de page">
+		<button id="scroll-btn" class="retour_top" title="Back to top">
+			<img src="img/top.svg" class="ancre_top" alt="Back to top">
 		</button>
+
+		<script src="js/scroll.js"></script>
 	</body>
 </html>
