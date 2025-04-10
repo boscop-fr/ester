@@ -1,8 +1,8 @@
 {
-  "name": "@empreinte-digitale/ester",
+  "name": "@boscop/ester",
   "version": "1.0.1",
   "description": "Ester, the CSS reset",
-  "author": "Emmanuel Charbonnier <emmanuel.charbonnier@empreintedigitale.fr>",
+  "author": "Emmanuel Charbonnier <emmanuel.charbonnier@boscop.fr>",
   "main": "scss/reset.scss",
   "keywords": [
     "reset",
