@@ -9,17 +9,17 @@
     "css"
   ],
   "engines": {
-    "node": ">=6.15.1"
+    "node": ">=18"
   },
   "scripts": {
-    "start": "parallelshell \"npm run build\" \"npm run build -- --watch\" \"npm run build-test\" \"npm run build-test -- --watch\"",
-    "build": "node-sass scss --output css",
-    "build-min": "node-sass scss/reset.scss css/reset.min.css --output-style compressed",
-    "build-test": "node-sass test/scss --output test/css",
-    "prepublish": "parallelshell \"npm run build\" \"npm run build-min\""
+    "start": "concurrently \"npm run build\" \"npm run build -- --watch\" \"npm run build-test\" \"npm run build-test -- --watch\"",
+    "build": "sass scss:css",
+    "build-min": "sass scss/reset.scss css/reset.min.css --style compressed",
+    "build-test": "sass test/scss:test/css",
+    "prepublish": "concurrently \"npm run build\" \"npm run build-min\""
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
-    "parallelshell": "3.0.1"
+    "concurrently": "^9.1.2",
+    "sass": "^1.86.3"
   }
 }
