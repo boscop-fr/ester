@@ -15,12 +15,12 @@ Import the reset from either HTML or CSS, before any other styles:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@empreinte-digitale@ester/css/reset.min.css"
+  href="https://unpkg.com/@boscop@ester/css/reset.min.css"
 />
 ```
 
 ```css
-@import 'https://unpkg.com/@empreinte-digitale/ester/css/reset.min.css';
+@import 'https://unpkg.com/@boscop/ester/css/reset.min.css';
 ```
 
 ### With a package manager
@@ -28,9 +28,9 @@ Import the reset from either HTML or CSS, before any other styles:
 #### Installation
 
 ```sh
-npm install @empreinte-digitale/ester
+npm install @boscop/ester
 # or
-yarn add @empreinte-digitale/ester
+yarn add @boscop/ester
 ```
 
 #### Sass
@@ -39,7 +39,7 @@ Many third-party tools allow you to import Sass stylesheets
 from node modules into your projet using a simple syntax:
 
 ```sass
-@import '~@empreinte-digitale/ester'
+@import '~@boscop/ester'
 ```
 
 See [webpack's sass-loader](https://webpack.js.org/loaders/sass-loader/#resolving-import-at-rules)
@@ -54,12 +54,12 @@ either HTML or CSS:
 ```html
 <link
   rel="stylesheet"
-  href="/path/to/@empreinte-digitale/ester/css/reset.css"
+  href="/path/to/@boscop/ester/css/reset.css"
 />
 ```
 
 ```css
-@import '/path/to/@empreinte-digitale/ester/css/reset.min.css';
+@import '/path/to/@boscop/ester/css/reset.min.css';
 ```
 
 ## Development
@@ -81,4 +81,4 @@ npm publish
 
 ## Credits
 
-Ester is maintained by [<span lang="fr">Empreinte Digitale</span> (french)](http://empreintedigitale.fr).
+Ester is maintained by [<span lang="fr">Boscop</span> (french)](http://boscop.fr).
